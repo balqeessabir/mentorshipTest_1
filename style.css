@@ -1,0 +1,80 @@
+.flex-container {
+    /* We first create a flex layout context */
+    display: flex;
+
+    /* Then we define the flow direction 
+       and if we allow the items to wrap 
+     * Remember this is the same as:
+     * flex-direction: row;
+     * flex-wrap: wrap;
+     * flex-flow: row wrap;
+
+     */
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* Then we define how is distributed the remaining space */
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.col {
+    flex-direction: column;
+    width: 24%;
+
+}
+
+.main {
+    flex: 2 0px;
+
+}
+
+.flex-item {
+    background: tomato;
+    padding: 5px;
+    width: 200px;
+    height: 150px;
+    margin-top: 10px;
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+}
+
+.border {
+    border: solid 2px;
+    padding: 3px;
+    text-align: center;
+    display: inline;
+    border-radius: 50%;
+    /** for vertical center - if needed **/
+}
+
+ul {
+    list-style-type: none;
+}
+
+.line-border {
+    height: 100px;
+    width: 100%;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+}
+
+
+.search {
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 20px;
+    outline: none;
+    color: #9DBFAF;
+    width: 80%;
+    position: relative;
+    display: flex;
+}
+
+.searchTerm {
+    border: none;
+}
